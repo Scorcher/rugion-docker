@@ -1,4 +1,4 @@
-FROM scorcher/rugion-java:latest
+FROM scorcher/rugion-java7:latest
 
 MAINTAINER Nikolay Didenko "nd@info74.ru"
 
