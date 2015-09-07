@@ -1,4 +1,4 @@
-FROM rugion-npm:latest
+FROM scorcher/rugion-npm:latest
 
 MAINTAINER Nikolay Didenko "nd@info74.ru"
 
