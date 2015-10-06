@@ -4,6 +4,6 @@
 
 # Description
 
-This image based on [scorcher/pinba-server:10 image from Docker Hub](https://hub.docker.com/_/mariadb/)
+This image based on [scorcher/pinba-server:latest image from Docker Hub](https://hub.docker.com/r/scorcher/pinba-server/)
 
 
