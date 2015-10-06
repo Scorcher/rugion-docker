@@ -15,8 +15,17 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+-- create PINBA user
 GRANT ALL PRIVILEGES ON pinba.* TO 'pinba'@'%' IDENTIFIED BY 'pinba';
 
+-- root can connect only locally
+CREATE USER 'root'@'localhost' IDENTIFIED BY '' ;
+GRANT ALL ON *.* TO 'root'@'localhost' WITH GRANT OPTION ;
+REVOKE ALL ON *.* FROM 'root'@'%';
+DROP USER 'root'@'%';
+FLUSH PRIVILEGES ;
+
+-- restore backup...
 USE pinba;
 
 
