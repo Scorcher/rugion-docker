@@ -1,4 +1,4 @@
-FROM mariadb:10
+FROM mariadb:10.0
 
 MAINTAINER Nikolay Didenko "nd@info74.ru"
 
