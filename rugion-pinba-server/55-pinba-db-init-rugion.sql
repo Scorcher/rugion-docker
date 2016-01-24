@@ -364,6 +364,30 @@ CREATE TABLE `tag_info_legacy_controllers_6d38324d449ca4ab4f6551624d0458f2` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `tag_info_legacy_controllers_ce53d48048e6fbf00c470c6bafaa7c81`
+--
+
+DROP TABLE IF EXISTS `tag_info_legacy_controllers_ce53d48048e6fbf00c470c6bafaa7c81`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tag_info_legacy_controllers_ce53d48048e6fbf00c470c6bafaa7c81` (
+  `system_handler_interface_interpreter_value` varchar(64) DEFAULT NULL,
+  `system_handler_interface_controller_value` varchar(64) DEFAULT NULL,
+  `req_count` int(11) DEFAULT NULL,
+  `req_per_sec` float DEFAULT NULL,
+  `hit_count` int(11) DEFAULT NULL,
+  `hit_per_sec` float DEFAULT NULL,
+  `timer_value` float DEFAULT NULL,
+  `timer_median` float DEFAULT NULL,
+  `index_value` varchar(256) DEFAULT NULL,
+  `p75` float DEFAULT NULL,
+  `p90` float DEFAULT NULL,
+  `p95` float DEFAULT NULL,
+  `p99` float DEFAULT NULL
+) ENGINE=PINBA DEFAULT CHARSET=latin1 COMMENT='tag2_info:system_handler_interface_interpreter,system_handler_interface_controller::75,90,95,99';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `tag_info_legacy_controllers_ebc6e32dfd4c6b4084699e6586a98c1e`
 --
 
